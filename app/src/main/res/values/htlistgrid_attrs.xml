@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="HtListGrid">
+
+        <attr name="fix_column_count" format="integer" />
+
+        <attr name="footer_visible" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+            <enum name="VISIBLE" value="0" />
+            <enum name="INVISIBLE" value="4" />
+            <enum name="GONE" value="8" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>

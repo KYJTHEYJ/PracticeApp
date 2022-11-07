@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#CCFFFF"
+        android:centerColor="#EEFFFF"
+        android:endColor="#FFFFFF"
+        android:centerY="0.50"
+        android:angle="90" />
+</shape>
+
+    <!-- 샘플
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <gradient android:startColor="#FFFF00" android:endColor="#FFFFFF" android:angle="270"/>
+        <corners android:radius="0dp" />
+    </shape>
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+        <gradient android:type="radial"
+            android:startColor="#ff0000"
+            android:endColor="#ffff00"
+            android:gradientRadius="300"
+            android:centerX="0.5"
+            android:centerY="0.7"/>
+    </shape>
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="line">
+        <stroke android:width="1dp" android:color="#FF000000"
+                android:dashWidth="1dp" android:dashGap="2dp" />
+        <size android:height="5dp" />
+    </shape>
+
+
+    <shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+        <solid android:color="#00000000"/>
+        <stroke android:width="4dp" android:color="#990000FF"
+                android:dashWidth="4dp" android:dashGap="2dp" />
+        <padding android:left="7dp" android:top="7dp"
+                android:right="7dp" android:bottom="7dp" />
+        <corners android:radius="4dp" />
+    </shape>
+
+    <shape android:shape="ring" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:innerRadiusRatio="3"
+        android:thicknessRatio="8"
+        android:useLevel="false">
+        <size android:width="48dip"
+            android:height="48dip" />
+        <gradient android:type="sweep"
+            android:useLevel="false"
+            android:startColor="#4c737373"
+            android:centerColor="#4c737373"
+            android:centerY="0.50"
+            android:endColor="#ffffd300" />
+    </shape>
+
+
+    -->

@@ -1,3 +1,674 @@
 <resources>
     <string name="app_name">My Application</string>
+
+    <!-- 메인 메뉴 이름 -->
+    <string name="menu_system_management">시스템관리</string>
+    <string name="menu_system_management_multi_line">시스템\n관리</string>
+    <string name="menu_production_management">생산관리</string>
+    <string name="menu_production_management_multi_line">생산\n관리</string>
+    <string name="menu_logistics_input_management">입고관리</string>
+    <string name="menu_logistics_input_management_multi_line">입고\n관리</string>
+    <string name="menu_logistics_output_management">출고관리</string>
+    <string name="menu_logistics_output_management_multi_line">출고\n관리</string>
+    <string name="menu_logistics_return_management">반품관리</string>
+    <string name="menu_logistics_return_management_multi_line">반품\n관리</string>
+    <string name="menu_logistics_location_management">로케이션관리</string>
+    <string name="menu_logistics_location_management_multi_line">로케이션\n관리</string>
+    <string name="menu_logistics_stocktaking_management">실사관리</string>
+    <string name="menu_logistics_stocktaking_management_multi_line">실사\n관리</string>
+    <string name="menu_logistics_inspection_management">검수관리</string>
+    <string name="menu_logistics_inspection_management_multi_line">검수\n관리</string>
+    <string name="menu_logistics_stock_management">재고현황</string>
+    <string name="menu_logistics_stock_management_multi_line">재고\n현황</string>
+    <string name="menu_logistics_etc_management">기타업무</string>
+    <string name="menu_logistics_etc_management_multi_line">기타\n업무</string>
+    <string name="menu_rfid_logistics_etc_management">RFID업무</string>
+    <string name="menu_rfid_logistics_etc_management_multi_line">RFID\n업무</string>
+    <string name="menu_rfid_logistics_default_task">RFID기본</string>
+    <string name="menu_rfid_logistics_default_task_multi_line">RFID\n기본</string>
+    <string name="menu_rfid_logistics_management_task">RFID업무</string>
+    <string name="menu_rfid_logistics_management_task_multi_line">RFID\n업무</string>
+    <string name="menu_rfid_logistics_management_input_output">입출고</string>
+    <string name="menu_rfid_logistics_management_input_output_multi_line">입출고</string>
+    <string name="menu_rfid_logistics_management_input">입고</string>
+    <string name="menu_rfid_logistics_management_input_multi_line">입고</string>
+    <string name="menu_rfid_logistics_management_output">출고</string>
+    <string name="menu_rfid_logistics_management_output_multi_line">출고</string>
+    <string name="menu_rfid_logistics_management_return">반품</string>
+    <string name="menu_rfid_logistics_management_return_multi_line">반품</string>
+
+    <!-- 서브 메뉴 이름 -->
+    <string name="menu_wh_main">메인메뉴</string>
+    <string name="menu_wh_01010">기초정보 다운로드</string>
+    <string name="menu_wh_01020_bluetooth_barcode_connect">블루투스 스캐너 연결</string>
+    <string name="menu_wh_01030_bluetooth_jbr_barcode_setting">JBR 스캐너 환경설정</string>
+    <string name="menu_wh_12015">입고예정등록</string>
+    <string name="menu_wh_12020">입고전송</string>
+    <string name="menu_wh_12030">입고현황</string>
+    <string name="menu_wh_13010">수기반품등록</string>
+    <string name="menu_wh_13015">반품예정등록</string>
+    <string name="menu_wh_13020">반품전송</string>
+    <string name="menu_wh_13030">반품현황</string>
+    <string name="menu_wh_14010">로케이션이동(사용안함)</string>
+    <string name="menu_wh_14011">로케이션이동</string>
+    <string name="menu_wh_14020">입고LOC이동</string>
+    <string name="menu_wh_15010">일괄배분등록</string>
+    <string name="menu_wh_15011">매장별배분등록</string>
+    <string name="menu_wh_15015">포장작업</string>
+    <string name="menu_wh_15020">일괄배분전송</string>
+    <string name="menu_wh_15030">일괄배분현황</string>
+    <string name="menu_wh_17010">수기실사등록</string>
+    <string name="menu_wh_17020">실사전송</string>
+    <string name="menu_wh_17030">실사현황</string>
+    <string name="menu_wh_18010">제품재고</string>
+    <string name="menu_wh_18020">아소트재고</string>
+    <string name="menu_wh_19010">택배하차</string>
+    <string name="menu_wh_20010">가상창고이동</string>
+    <string name="menu_wh_21010">가상창고이동</string>
+    <string name="menu_wh_22010">반품전송확인</string>
+    <string name="menu_wh_23010_rfid_tag_writing">RFID 태그 라이팅</string>
+    <string name="menu_wh_24010_rfid_reg_input_schedule">RFID 입고예정등록</string>
+    <string name="menu_wh_24030_rfid_in_schd_send_list">RFID 예정입고 전송내역</string>
+    <string name="menu_wh_25010_rfid_stocktaking">RFID 재고실사</string>
+    <string name="menu_wh_26010_rfid_search_tag">RFID 태그찾기</string>
+    <string name="menu_wh_27010_rfid_input_warehouse_rfid">RFID 입고예정 검수</string>
+    <string name="menu_wh_28010_rfid_input_warehouse_handwriting">RFID 수기입고 검수</string>
+    <string name="menu_wh_29010_rfid_return_schedule">RFID 반품예정등록</string>
+    <string name="menu_wh_29020_rfid_return_schedule">RFID 반품예정등록_NEW</string>
+    <string name="menu_wh_30010_Rfid_reg_batch_distribution_input_box">RFID 일괄배분등록</string>
+    <string name="menu_wh_31010_Rfid_defect_inspection">RFID 불량출고의뢰</string>
+    <string name="menu_wh_32010_Input_Box_And_Invoice_Number_Mapping">입고박스 송장매핑</string>
+    <string name="menu_wh_33010_Rfid_Reg_Distribution_Shop">RFID 매장별 배분등록</string>
+    <string name="menu_wh_34010_Rfid_Packing_Work">RFID 포장작업</string>
+    <string name="menu_wh_34020_Rfid_Packing_Work_Assort">RFID 포장작업 (아소트)</string>
+    <string name="menu_wh_35010_Rfid_Return_warehouse_handwriting">RFID 수기반품 검수</string>
+    <string name="menu_w_01010_download">기초정보 다운로드</string>
+    <string name="menu_w_10010_input_solid_rfid">RFID 솔리드 입고</string>
+    <string name="menu_w_11010_input_return_solid_rfid">RFID 솔리드 입고반품</string>
+    <string name="menu_w_21010_output_solid_rfid">RFID 솔리드 출고</string>
+    <string name="menu_w_31010_return_solid_rfid">RFID 솔리드 반품</string>
+    <string name="menu_w_32010_return_request_rfid">RFID 의뢰 반품</string>
+
+    <!-- 다이얼로그 이름 -->
+    <string name="dialog_download_state">기초정보 다운로드</string>
+
+    <!-- 사용하는 달력 전용-->
+    <string name="done_label">확인</string>
+    <string name="day_picker_description">월 리스트</string>
+    <string name="year_picker_description">연도 리스트</string>
+    <string name="select_day">월과 일 선택</string>
+    <string name="select_year">연도 선택</string>
+    <string name="item_is_selected">%1$s 선택됨</string>
+    <string name="sans_serif" translatable="false">sans-serif</string>
+    <string name="day_of_week_label_typeface" translatable="false">sans-serif</string>
+
+    <!-- 네비게이션 메뉴 -->
+    <string name="drawer_open">메뉴 열기</string>
+    <string name="drawer_close">메뉴 닫기</string>
+    <string name="version">"버전"</string>
+
+    <!--로그인-->
+    <string name="login_title">LOGIN</string>
+    <string name="login">로그인</string>
+    <string name="login_offline">오프라인\n<br />로그인</string>
+    <string name="logout">로그아웃</string>
+    <string name="login_invalid">입력된 로그인 정보가 유효하지 않습니다.</string>
+    <string name="id">아이디</string>
+    <string name="password">패스워드</string>
+    <string name="save_company_id">회사ID 저장</string>
+    <string name="save_id">아이디 저장</string>
+    <string name="save_password">패스워드 저장</string>
+    <string name="lang_en_short">EN</string>
+    <string name="lang_en">ENGLISH</string>
+    <string name="company">회사</string>
+    <string name="company_id">회사ID</string>
+
+    <!-- 공통버튼 -->
+    <string name="button_delete_all">전체\n<br />삭제</string>
+    <string name="button_save">저장</string>
+    <string name="button_send">전송</string>
+    <string name="button_send_cancel">전송\n<br />취소</string>
+    <string name="button_schedule_qty_to_work_qty">예정\n<br />->검수</string>
+    <string name="button_stock_qty_to_location">재고\n<br />->이동</string>
+    <string name="button_input_qty_to_location">입고\n<br />->이동</string>
+    <string name="button_done">확인</string>
+    <string name="button_ok">확인</string>
+    <string name="button_cancel">취소</string>
+    <string name="button_close">닫기</string>
+    <string name="button_cancel_all">전체 취소</string>
+    <string name="button_search">검색</string>
+    <string name="button_download_prod_info">제품정보 다운로드</string>
+    <string name="button_download_prod_info_year">제품정보 연도별 다운로드</string>
+    <string name="button_download_customer_info">거래처정보 다운로드</string>
+    <string name="button_download_assort_info">아소트정보 다운로드</string>
+    <string name="button_download_manufacture_box_schedule_info">생산업체 박스예정정보 다운로드</string>
+    <string name="button_download_auth_info">권한정보 다운로드</string>
+    <string name="button_download_common_info">공통코드정보 다운로드</string>
+    <string name="button_bluetooth_setting">블루투스\n<br />설정</string>
+    <string name="button_turn_off">꺼짐</string>
+    <string name="button_turn_on">켜짐</string>
+    <string name="button_volumn_up">크게</string>
+    <string name="button_volumn_down">작게</string>
+    <string name="button_second_30">30초</string>
+    <string name="button_minute_1">1분</string>
+    <string name="button_minute_5">5분</string>
+    <string name="button_minute_10">10분</string>
+    <string name="button_minute_30">30분</string>
+    <string name="button_scanner_memory_delete">스캐너 메모리 삭제</string>
+    <string name="button_write">쓰기</string>
+    <string name="button_select_all">전체\n<br />선택</string>
+    <string name="button_unselect_all">전체\n<br />해제</string>
+    <string name="button_delete_selected">선택\n<br />삭제</string>
+    <string name="button_cancel_send_selected">전송\n<br />취소</string>
+    <string name="button_send_selected">선택\n<br />전송</string>
+    <string name="button_box_next">다음박스</string>
+    <string name="button_box_cancel">박스취소</string>
+    <string name="button_apply">적용</string>
+    <string name="button_rfid_tag_reading">RFID 태그 리딩</string>
+    <string name="button_rfid_tag_writing">RFID 태그 라이팅</string>
+    <string name="button_inquery_work_list">작업 조회</string>
+    <string name="button_inquery_work_list_line_two">작업\n<br />조회</string>
+    <string name="button_inquery_request_list">의뢰 조회</string>
+    <string name="button_inquery_request_list_line_two">의뢰\n<br />조회</string>
+    <string name="button_clear">초기화</string>
+    <string name="button_mainmenu">메인메뉴</string>
+    <string name="button_logout">로그아웃</string>
+    <string name="button_rfid_setting">RFID 환경설정</string>
+    <string name="button_app_exit">종료</string>
+    <string name="button_rfid_list_line_one">RFID리스트</string>
+    <string name="button_rfid_list_line_two">RFID\n<br />리스트</string>
+    <string name="button_get_return_info_with_rfid_line_two">반품정보\n<br />가져오기</string>
+    <string name="button_delete">삭제</string>
+    <string name="button_confirm">확인</string>
+    <string name="button_rfid_code_generator_for_test">테스트용 RFID코드 생성기</string>
+    <string name="button_grid_expansion_or_shrink">그리드 확대/축소</string>
+    <string name="button_download_cfcode">공통코드 다운로드</string>
+    <string name="button_download_cfcodebrd">공통코드(브랜드) 다운로드</string>
+    <string name="button_download_cfcomp">회사정보 다운로드</string>
+    <string name="button_download_plcolcd">컬러정보 다운로드</string>
+    <string name="button_download_plbrcd">브랜드정보 다운로드</string>
+    <string name="button_download_plitemcd">아이템정보 다운로드</string>
+    <string name="button_download_plsizecd">사이즈정보 다운로드</string>
+    <string name="button_download_plstycd">스타일정보 다운로드</string>
+    <string name="button_download_prcust">거래처정보 다운로드</string>
+    <string name="button_download_shshop">매장정보 다운로드</string>
+    <string name="button_download_dsware">창고정보 다운로드</string>
+    <string name="button_download_dsloccd">로케이션정보 다운로드</string>
+    <string name="button_download_plstydtlcd">스타일상세정보 다운로드</string>
+    <string name="button_download_plcoszqty">작지정보 다운로드</string>
+
+    <!-- 텍스트뷰 라벨 -->
+    <string name="label_location">로케이션</string>
+    <string name="label_location_line_two">로케\n<br />이션</string>
+    <string name="label_state">상태</string>
+    <string name="label_shop">매장</string>
+    <string name="label_warehouse">물류센터</string>
+    <string name="label_remark">비고</string>
+    <string name="label_style">스타일</string>
+    <string name="label_color">컬러</string>
+    <string name="label_size">사이즈</string>
+    <string name="label_barcode">바코드</string>
+    <string name="label_prod_barcode">제품바코드</string>
+    <string name="label_prod_barcode_line_two">제품\n<br />바코드</string>
+    <string name="label_style_color_size">스타일\n<br />컬러\n<br />사이즈</string>
+    <string name="label_manufacturer">생산처</string>
+    <string name="label_schedule_box_number">예정\n<br />박스번호</string>
+    <string name="label_download_last_date">최종 다운로드 일자</string>
+    <string name="label_plan_year">기획연도</string>
+    <string name="label_bluetooth_device_paired">페어링된 Bluetooth 장비</string>
+    <string name="label_sound_volume">사운드 크기</string>
+    <string name="label_vibrator">진동</string>
+    <string name="label_device_delay_time">기기 대기시간</string>
+    <string name="label_device_time">시간표시 ( 기기 데이터 다운로드시 )</string>
+    <string name="label_device_data_count">데이터 COUNT 표시</string>
+    <string name="label_device_led">기기 LED 표기</string>
+    <string name="label_device_memory_delete">메모리 삭제</string>
+    <string name="label_smartphone_touch_tag">스마트폰을 태그에 대주세요</string>
+    <string name="label_work_date">작업일자</string>
+    <string name="label_work_date_multi_line">작업\n<BR />일자</string>
+    <string name="label_request_date">요청일자</string>
+    <string name="label_request_date_multi_line">요청\n<BR />일자</string>
+    <string name="label_request_date2">의뢰일자</string>
+    <string name="label_request_date2_multi_line">의뢰\n<BR />일자</string>
+    <string name="label_work_no">작업번호</string>
+    <string name="label_work_no_multi_line">작업\n<BR />번호</string>
+    <string name="label_work_seq">작업차수</string>
+    <string name="label_work_seq_multi_line">작업\n<BR />순번</string>
+    <string name="label_input_key">입고키</string>
+    <string name="label_return_key">반품키</string>
+    <string name="label_move_key">이동키</string>
+    <string name="label_date_period">기간</string>
+    <string name="label_prod_name">제품명</string>
+    <string name="label_send_type">전송구분</string>
+    <string name="label_send_date">전송일자</string>
+    <string name="label_return_type">반품구분</string>
+    <string name="label_output_type">출고구분</string>
+    <string name="label_input_type">입고구분</string>
+    <string name="label_work_type">작업구분</string>
+    <string name="label_accumulate">누적</string>
+    <string name="label_box_total">총박스</string>
+    <string name="label_box_no">박스번호</string>
+    <string name="label_box_no_code">박스번호코드</string>
+    <string name="label_return_amount_total">총반품량</string>
+    <string name="label_box_barcode">BOX바코드</string>
+    <string name="label_location_from">FR LOC</string>
+    <string name="label_location_to">TO LOC</string>
+    <string name="label_slip_no">전표번호</string>
+    <string name="label_input_slip">입고전표</string>
+    <string name="label_work_slip">작업전표</string>
+    <string name="label_box_name">박스명</string>
+    <string name="label_box_qty">박스수량</string>
+    <string name="label_total_qty">총수량</string>
+    <string name="label_batch_number">배치번호</string>
+    <string name="label_work_voucher">작업전표</string>
+    <string name="label_device_number">장비번호</string>
+    <string name="label_good">상품</string>
+    <string name="label_assort">아소트</string>
+    <string name="label_date">일자</string>
+    <string name="label_delivery_invoice_number">운송장번호</string>
+    <string name="label_invoice_number">송장번호</string>
+    <string name="label_from">FROM</string>
+    <string name="label_to">TO</string>
+    <string name="label_send_yn">전송여부</string>
+    <string name="label_rfid_tag_info">RFID태그 정보</string>
+    <string name="label_clear">초기화</string>
+    <string name="label_input_schedule_date">입고예정일</string>
+    <string name="label_schedule_date">예정일자</string>
+    <string name="label_input">입고</string>
+    <string name="label_input_return">입고반품</string>
+    <string name="label_rfid_power">RFID 출력</string>
+    <string name="label_rfid_barcode">RFID바코드</string>
+    <string name="label_rfid_barcode_line_two">RFID\n<br />바코드</string>
+    <string name="label_brand">브랜드</string>
+    <string name="label_business">사업부</string>
+    <string name="label_year">연도</string>
+    <string name="label_season">시즌</string>
+    <string name="label_prod_type">제품구분</string>
+    <string name="label_prod_kind">품종</string>
+    <string name="label_search_condition">검색조건</string>
+    <string name="label_tilde">~</string>
+    <string name="label_cust">생산처</string>
+    <string name="label_supplier">생산처</string>
+    <string name="label_supplier_schedule_box_info">입고예정박스 정보</string>
+    <string name="label_prod_code">제품코드</string>
+    <string name="label_prod">제품</string>
+    <string name="label_input_box">입고박스</string>
+    <string name="label_input_box_barcode">입고박스 바코드</string>
+    <string name="label_input_box_barcode_line_two">입고박스\n바코드</string>
+    <string name="label_rfid_setting">RFID 환경설정</string>
+    <string name="label_return_period">반품기간</string>
+    <string name="label_inquery_work_list">작업 조회</string>
+    <string name="label_inquery_work_list_line_two">작업\n<br />조회</string>
+    <string name="label_notification">알림</string>
+    <string name="label_version">버전</string>
+    <string name="label_user_name">사용자명</string>
+    <string name="label_company_name">회사명</string>
+    <string name="label_product_info">제품 정보</string>
+    <string name="label_product_info_1">제품 정보_1</string>
+    <string name="label_common_code_info">공통코드 정보</string>
+    <string name="label_customer_info">거래처 정보</string>
+    <string name="label_assort_info">아소트 정보</string>
+    <string name="label_auth_info">권한 정보</string>
+    <string name="label_cancel">취소</string>
+    <string name="label_to_be_write_rfid_code">입력할\n<BR />RFID코드</string>
+    <string name="label_write_target_tag_rfid_code">대상태그\n<BR />RFID코드</string>
+    <string name="label_write_target_tag_tid_code">대상태그\n<BR />TID코드</string>
+    <string name="label_all">전체</string>
+    <string name="label_style_number">스타일번호</string>
+    <string name="label_select_input_type">입력선택</string>
+    <string name="label_add_no">차수</string>
+    <string name="label_download_cfcode">공통코드 정보</string>
+    <string name="label_download_cfcodebrd">공통코드(브랜드) 정보</string>
+    <string name="label_download_cfcomp">회사 정보</string>
+    <string name="label_download_plcolcd">컬러 정보</string>
+    <string name="label_download_plbrcd">브랜드 정보</string>
+    <string name="label_download_plitemcd">아이템 정보</string>
+    <string name="label_download_plsizecd">사이즈 정보</string>
+    <string name="label_download_plstycd">스타일 정보</string>
+    <string name="label_download_prcust">거래처 정보</string>
+    <string name="label_download_shshop">매장 정보</string>
+    <string name="label_download_dsware">창고 정보</string>
+    <string name="label_download_dsloccd">로케이션 정보</string>
+    <string name="label_download_plstydtlcd">스타일상세 정보</string>
+    <string name="label_download_plcoszqty">작지 정보</string>
+    <string name="label_type">유형</string>
+    <string name="label_purpose">용도</string>
+    <string name="label_available">가용</string>
+    <string name="label_normal_or_bad">정불</string>
+    <string name="label_progress_status">진행상태</string>
+    <string name="label_return_request_type">반품의뢰구분</string>
+
+    <!-- 그리드뷰 칼럼명 라벨 -->
+    <string name="label_column_seq_no">NO</string>
+    <string name="label_column_check">체크</string>
+    <string name="label_column_assort">아소트</string>
+    <string name="label_column_assort_type">아소트구분</string>
+    <string name="label_column_assort_type_short">구분</string>
+    <string name="label_column_assort_no">아소트번호</string>
+    <string name="label_column_assort_name">아소트명</string>
+    <string name="label_column_product_code">제품코드</string>
+    <string name="label_column_product_name">제품명</string>
+    <string name="label_column_style_no">스타일번호</string>
+    <string name="label_column_style_code">스타일코드</string>
+    <string name="label_column_style_name">스타일명</string>
+    <string name="label_column_style_rfid_code">RF스타일코드</string>
+    <string name="label_column_color_code">색상</string>
+    <string name="label_column_color_name">색상명</string>
+    <string name="label_column_color_rfid_code">RF색상코드</string>
+    <string name="label_column_size_code_and_name">사이즈</string>
+    <string name="label_column_size_code">사이즈</string>
+    <string name="label_column_size_name">사이즈명</string>
+    <string name="label_column_size_rfid_code">RF사이즈코드</string>
+    <string name="label_column_qty_schedule">예정</string>
+    <string name="label_column_qty_inspection">검수</string>
+    <string name="label_column_qty">수량</string>
+    <string name="label_column_qty_work">작업</string>
+    <string name="label_column_send_yn">전송여부</string>
+    <string name="label_column_work_date">작업일자</string>
+    <string name="label_column_work_date_multi_line">작업\n일자</string>
+    <string name="label_column_work_number">작업번호</string>
+    <string name="label_column_supplier_name">생산처</string>
+    <string name="label_column_box_number">박스번호</string>
+    <string name="label_column_rfid_code">RFID코드</string>
+    <string name="label_column_barcode">바코드</string>
+    <string name="label_column_rfid_manage_yn">RF관리</string>
+    <string name="label_column_rfid_manage_skip_yn">RF스킵</string>
+    <string name="label_column_season">시즌</string>
+    <string name="label_column_schedule_box_no">예정박스번호</string>
+    <string name="label_column_supplier_code">생산업체코드</string>
+    <string name="label_column_use_yn">사용유무</string>
+    <string name="label_column_schd_de">예정일자</string>
+    <string name="label_column_ast_qty">아소트수량</string>
+    <string name="label_column_ast_dtl_qty">내품수량</string>
+    <string name="label_column_sld_qty">솔리드수량</string>
+    <string name="label_column_ast_box_qty">박스수(A)</string>
+    <string name="label_column_sld_box_qty">박스수(S)</string>
+    <string name="label_column_ware_nm">물류창고</string>
+    <string name="label_column_fix_de">본사확정</string>
+
+    <!-- 힌트 -->
+    <string name="hint_none_epc_data">EPC 값 없음</string>
+    <string name="hint_none_tid_data">TID 값 없음</string>
+    <string name="hint_barcode_reading_or_select_here">바코드 리딩 또는 이곳을 선택</string>
+    <string name="hint_select_here">이곳을 선택</string>
+    <string name="hint_need_input">입력 필요</string>
+    <string name="hint_no_input">미입력</string>
+    <string name="hint_rfid_tag_writing">라이팅할 RFID태그 입력 또는 RFID 바코드 리딩 (EX : 1BYTSF1001MDR100983321)</string>
+    <string name="hint_rfid_tag_writing_caution1"> - 설명 - \n<br /> 1. 라이팅을 원하는 RFID코드를 입력합니다. (직접 입력 또는 건트리거 바코드 동작)\n<br /> 2. 라이팅할 대상 RFID태그를 리딩합니다. (건트리거 RFID 리딩 동작) 해당 태그의 TID와 EPC정보가 화면에 표시 되며, 바탕색이 빨간색으로 바뀝니다. \n<br /> 3. 대상 RFID태그에 라이팅 합니다. (건트리거 RFID 리딩 동작) 성공하면 배경색이 파란색으로 바뀝니다.</string>
+    <string name="hint_rfid_tag_writing_caution2"> - 주의 - \n<br />   리딩한 RFID태그와 Write되는 RFID태그가 달라질 수 있으므로, 리딩할 때부터 Write가 완료될 때까지 RFID태그를 RFID 안테나 앞에 붙여서 사용하세요!</string>
+    <string name="hint_not_use_location">미사용</string>
+
+    <!--  메세지  -->
+    <string name="msg_rfid_power_setting_success">RFID 파워 설정 성공</string>
+    <string name="msg_rfid_power_setting_fail">RFID 파워 설정 실패</string>
+    <string name="msg_rfid_power_get_fail">RFID 파워 가져오기 실패</string>
+    <string name="msg_listgridview_data_none">저장할 데이터가 없습니다</string>
+    <string name="msg_not_selected_device_number">장비번호가 선택되지 않았습니다</string>
+    <string name="msg_not_match_schd_qty_and_work_qty">예정수량과 검수수량이 일치하지 않습니다</string>
+    <string name="msg_listgridview_valid_data_none">저장할 유효한 데이터가 없습니다</string>
+    <string name="msg_data_processing">데이터 처리중입니다</string>
+    <string name="msg_data_process_finishing">데이터작업을 마무리 중입니다</string>
+    <string name="msg_data_loading">데이터 로드중입니다</string>
+    <string name="msg_download_complete">다운로드 완료</string>
+    <string name="msg_download_fail">다운로드 실패</string>
+    <string name="msg_download_cancel">다운로드 취소</string>
+    <string name="msg_work_number_delete">해당 작업번호를 삭제하시겠습니까?</string>
+    <string name="msg_delete_success">전체 삭제되었습니다</string>
+    <string name="msg_save_success">PDA에 데이터 저장이 성공했습니다</string>
+    <string name="msg_work_number_send">해당 작업번호를 전송하시겠습니까?</string>
+    <string name="msg_work_number_send_cancel">해당 작업번호를 전송 취소하시겠습니까?</string>
+    <string name="msg_delete_row_complete">라인 삭제되었습니다</string>
+    <string name="msg_delete_row_complete_have_schedule_qty">예정수량이 있는 행이므로 작업수량만 삭제했습니다</string>
+    <string name="msg_work_data_already_exist_with_box_no">해당 박스번호로 이미 작업중인 내역이 있습니다</string>
+    <string name="msg_work_data_already_send">이미 전송된 작업번호입니다</string>
+    <string name="msg_no_data_found">해당되는 데이터가 없습니다</string>
+    <string name="msg_move_to_new_work_no">새로운 작업번호로 이동되었습니다</string>
+    <string name="msg_confirm_logout">로그아웃 하시겠습니까?</string>
+    <string name="msg_confirm_move_to_mainmenu">메인메뉴로 이동 하시겠습니까?</string>
+    <string name="msg_confirm_app_exit">종료하시겠습니까?</string>
+    <string name="msg_onbackpressed_first">뒤로 한번 더 누르시면 홈 화면으로 이동 합니다</string>
+    <string name="msg_latest_data">최신 데이터 입니다</string>
+    <string name="msg_delete_error_occuered">삭제중 에러가 발생하였습니다</string>
+    <string name="msg_loading_error_occuered">로드중 에러가 발생하였습니다</string>
+    <string name="msg_delete_complete_selected">선택 삭제되었습니다</string>
+    <string name="msg_no_send_data_in_selected_work">선택 작업중 미전송 건이 없습니다</string>
+    <string name="msg_no_cancelable_data_in_selected_work">선택 작업중 취소할 건이 없습니다</string>
+    <string name="msg_delete_checked_work_number">체크된 작업번호를 삭제하시겠습니까? (미전송 작업만 삭제)</string>
+    <string name="msg_send_checked_work_number">체크된 작업번호를 전송하시겠습니까?</string>
+    <string name="msg_send_cancel_checked_work_number">체크된 작업번호를 전송취소하시겠습니까?</string>
+    <string name="msg_not_vaild_rfid_code">바코드가 유효한 RFID코드가 아닙니다</string>
+    <string name="msg_no_read_rfid_tag">리딩된 RFID태그가 없습니다</string>
+    <string name="msg_read_rfid_tag">RFID태그가 리딩되었습니다</string>
+    <string name="msg_rfid_tag_data_to_write_is_null">태그에 쓸 데이터가 NULL입니다</string>
+    <string name="msg_rfid_tag_write_success">RFID 태그에 쓰기 성공</string>
+    <string name="msg_rfid_tag_write_fail">RFID 태그에 쓰기 실패</string>
+    <string name="msg_not_read_target_rfid_tag_to_write">라이트할 대상 태그가 리딩되지 않았습니다</string>
+    <string name="msg_already_wrote_rfid_tag">이미 라이팅된 RFID태그입니다</string>
+    <string name="msg_input_rfid_code_is_not_valid">입력된 RFID코드가 유효하지 않습니다</string>
+    <string name="msg_no_color_data_redownload">해당 제품의 컬러정보가 없습니다.\n<br />제품정보를 확인 후 다시 다운 받아주세요</string>
+    <string name="msg_no_selected_data">선택한 데이터가 없습니다</string>
+    <string name="msg_condition_input_eng_4_kor_2">영어 4글자 또는 한글 2글자 이상 넣어주세요</string>
+    <string name="msg_no_searched_data">검색된 자료가 없습니다</string>
+    <string name="msg_data_downloading">데이터를 받는 중입니다</string>
+    <string name="msg_data_on_request">데이터를 요청 중입니다</string>
+    <string name="msg_check_internet_and_retry">인터넷을 확인 후 다시 시도해주세요</string>
+    <string name="msg_class_not_found">클래스가 없습니다</string>
+    <string name="msg_can_not_create_instance">인스턴스를 생성할 수 없습니다</string>
+    <string name="msg_can_not_access">엑세스할 수 없습니다</string>
+
+    <!-- String Arrays -->
+    <!-- wh_login -->
+    <string-array name="wh_login_conpanyname_array">
+        <item>(주)SGU_TEST</item>
+    </string-array>
+    <string-array name="wh_login_conpanynamecode_array">
+        <item>SG800</item>
+    </string-array>
+    <!-- end wh_login -->
+
+    <!-- shop_05030 -->
+    <string-array name="shop_05030_rtdayname_array">
+        <item>반출일자</item>
+        <item>반입일자</item>
+    </string-array>
+    <string-array name="shop_05030_rtdaynamecode_array">
+        <item>DT_RTOUT</item>
+        <item>DT_RTIN</item>
+    </string-array>
+    <string-array name="shop_05030_rttypename_array">
+        <item>반출</item>
+        <item>반입</item>
+    </string-array>
+    <string-array name="shop_05030_rttypenamecode_array">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="shop_05030_rtingname_array">
+        <item>이동중</item>
+        <item>완료</item>
+    </string-array>
+    <string-array name="shop_05030_rtingnamecode_array">
+        <item>N</item>
+        <item>Y</item>
+    </string-array>
+    <!-- end shop_05030 -->
+
+    <!-- shop_12010 -->
+    <string-array name="shop_12010_inouttype_array">
+        <item>입고</item>
+        <item>반품</item>
+    </string-array>
+    <string-array name="shop_12010_inouttypecode_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <!-- end shop_12010 -->
+
+    <!-- wh_13020 -->
+    <string-array name="wh_13020_returntype_array">
+        <item>예정</item>
+        <item>수기</item>
+    </string-array>
+    <string-array name="wh_13020_returntypecode_array">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <!-- end wh_13020 -->
+
+    <!-- wh_15020 -->
+    <string-array name="wh_15020_deliverytype_array">
+        <item>일괄배분</item>
+        <item>포장작업</item>
+    </string-array>
+    <string-array name="wh_15020_deliverytypecode_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="wh_15020_deliverytypesend_array">
+        <item>일괄배분</item>
+    </string-array>
+    <string-array name="wh_15020_deliverytypesendcode_array">
+        <item>0</item>
+    </string-array>
+    <!-- end wh_15020 -->
+
+    <!-- shop_14010 -->
+    <string-array name="shop_14010_inouttype_array">
+        <item>출고</item>
+        <item>반품</item>
+    </string-array>
+    <string-array name="shop_14010_inouttypecode_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <!-- end shop_14010 -->
+
+    <!-- shop_06010 -->
+    <string-array name="shop_06010_inouttype_array">
+        <item>판매</item>
+        <item>반품</item>
+    </string-array>
+    <string-array name="shop_06010_inouttypecode_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <!-- end shop_06010 -->
+
+    <!-- shop_06080 -->
+    <string-array name="shop_06080_ordertype_array">
+        <item>수량</item>
+        <item>금액</item>
+        <item>수량%</item>
+        <item>금액%</item>
+    </string-array>
+    <string-array name="shop_06080_ordertypecode_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="shop_06080_bestordertype_array">
+        <item>BEST</item>
+        <item>WORST</item>
+    </string-array>
+    <string-array name="shop_06080_bestordertypecode_array">
+        <item>ASC</item>
+        <item>DESC</item>
+    </string-array>
+    <!-- end shop_06080 -->
+
+    <!-- shop_17040 -->
+    <string-array name="shop_17040_pricetype_array">
+        <item>정상가</item>
+        <item>판매가</item>
+    </string-array>
+    <string-array name="shop_17040_pricetypecode_array">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="shop_17040_stocktype_array">
+        <item>전체</item>
+        <item>과다</item>
+        <item>부족</item>
+        <item>과다+부족</item>
+    </string-array>
+    <string-array name="shop_17040_stocktypecode_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="shop_17040_invantorytype_array">
+        <item>실사분</item>
+        <item>실사+재고(총재고)</item>
+        <item>실사+재고(실사 상품 재고기준)</item>
+        <item>실사+재고(실사 상품,색상 재고기준)</item>
+    </string-array>
+    <string-array name="shop_17040_invantorytypecode_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <!-- end shop_17040 -->
+
+    <!-- shop_07040 -->
+    <string-array name="shop_07040_pricetype_array">
+        <item>정상가</item>
+        <item>판매가</item>
+    </string-array>
+    <string-array name="shop_07040_pricetypecode_array">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="shop_07040_stocktype_array">
+        <item>전체</item>
+        <item>과다</item>
+        <item>부족</item>
+        <item>과다+부족</item>
+    </string-array>
+    <string-array name="shop_07040_stocktypecode_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="shop_07040_invantorytype_array">
+        <item>실사분</item>
+        <item>실사+재고(총재고)</item>
+        <item>실사+재고(실사 상품 재고기준)</item>
+        <item>실사+재고(실사 상품,색상 재고기준)</item>
+    </string-array>
+    <string-array name="shop_07040_invantorytypecode_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <!-- end shop_07040 -->
+
+    <!-- MKTREND -->
+    <string-array name="mktrend_brend_array">
+        <item>전체</item>
+        <item>TBJ</item>
+        <item>ANDEW</item>
+        <item>BUCKAROO</item>
+        <item>NBA</item>
+        <item>유동사업부</item>
+    </string-array>
+    <string-array name="mktrend_shopsaletype_array">
+        <item>전체</item>
+        <item>백화점</item>
+        <item>대리점</item>
+        <item>할인행사</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="mktrend_saletype_array">
+        <item>전체</item>
+        <item>정상</item>
+        <item>세일</item>
+        <item>균일</item>
+        <item>이월</item>
+    </string-array>
+    <!-- end -->
 </resources>

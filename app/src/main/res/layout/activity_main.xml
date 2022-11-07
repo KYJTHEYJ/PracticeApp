@@ -15,12 +15,42 @@
     android:layout_height="match_parent"
     tools:context=".Activity_Login">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#000"
         android:gravity="center"
         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="INSERT"
+            android:textColor="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="UPDATE"
+            android:textColor="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="DELETE"
+            android:textColor="#FFFFFFFF" />
 
         <TextView
             android:layout_width="match_parent"
@@ -61,6 +91,16 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="20dp"
             android:text="로그인"
+            android:textColor="#FFFFFFFF" />
+
+        <Button
+            android:id="@+id/btn_async"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:text="비동기 처리"
             android:textColor="#FFFFFFFF" />
 
     </LinearLayout>
